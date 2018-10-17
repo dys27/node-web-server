@@ -33,8 +33,8 @@ app.get('/',(req,res)=>{
   res.render('home.hbs',{
     pageTitle: 'home page',
     welcomeMessage: 'welcome bitch'
-  })
-})
+  });
+});
 
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
@@ -45,7 +45,13 @@ app.get('/about',(req,res)=>{
 app.get('/bad',(req,res)=>{
   res.send({
     errorMessage: 'bad request bitch'
-    })
-})
+  });
+});
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle: 'projects page'
+  });
+});
 
 app.listen(port);
