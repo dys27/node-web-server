@@ -32,7 +32,7 @@ hbs.registerHelper('getCurrentYear',()=>{
 app.get('/',(req,res)=>{
   res.render('home.hbs',{
     pageTitle: 'home page',
-    welcomeMessage: 'welcome bitch'
+    welcomeMessage: 'welcome'
   });
 });
 
@@ -44,7 +44,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/bad',(req,res)=>{
   res.send({
-    errorMessage: 'bad request bitch'
+    errorMessage: 'bad request'
   });
 });
 
